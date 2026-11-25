@@ -1,46 +1,36 @@
-# Cyber Intelligence & Evidence Validation
+# CYBER-AI / SENTINEL-AI
 
-**CYBER-AI / SENTINEL-AI integration** · Active research and development
+Work in progress. [Back to profile](../README.md).
 
-[Back to engineering profile](../README.md)
+I started CYBER-AI because I wanted a local security assistant whose answers could be checked against actual technical documentation. Getting a plausible answer from a model is relatively easy. Checking whether the cited source actually supports that answer is a different problem.
 
-## Problem
+The retrieval layer uses SQLite FTS5 and ChromaDB. I combine the lexical and semantic results using reciprocal rank fusion (RRF), then pass the context to a local model running through Ollama.
 
-Generative security assistants can produce plausible but unsupported technical conclusions. This project investigates how local AI, technical evidence and independent validation can be combined without treating model confidence as proof.
+I'm now integrating the assistant with SENTINEL-AI, which is based on the open-source ARTEX security testing platform.
 
-## Architecture
+## How the pieces fit together
 
 ```mermaid
 flowchart TD
-    A[Authorized security assessment] --> B[SENTINEL-AI / ARTEX-based capture]
-    B --> C[Evidence integrity bridge]
-    D[Local technical knowledge] --> E[Hybrid retrieval]
-    E --> F[Local model inference]
-    C --> G[Evidence evaluation]
-    F --> G
-    G --> H[Semantic and consistency validation]
-    H --> I{Provenance and publication policy}
-    I --> J[Eligible result]
-    I --> K[Hold for review]
+    A[Local documents] --> B[Hybrid retrieval]
+    B --> C[Local model]
+    D[HTTP evidence from SENTINEL-AI] --> E[Integrity checks]
+    E --> F[Evidence validation]
+    C --> F
+    F --> G[Consistency checks and NLI]
+    G --> H{Publication policy}
+    H --> I[Eligible for publication]
+    H --> J[Hold for review]
 ```
 
-Conceptual architecture; not a deployment diagram.
+Simplified view of the integration.
 
-## Engineering decisions
+One decision I've made is to keep semantic support, provenance and capture authenticity separate. A SHA-256 match tells me whether the content matches the recorded digest; it does not tell me whether the HTTP exchange was genuinely captured from the target. Likewise, an NLI result of SUPPORTED is not permission to publish a finding.
 
-- Hybrid retrieval combines lexical and vector search through reciprocal rank fusion.
-- Local inference separates model execution from external AI services.
-- Semantic entailment and structural consistency are distinct from evidence provenance.
-- Hash verification demonstrates content integrity, not the authenticity of a network capture.
-- Publication policies can withhold conclusions when evidence or provenance is insufficient.
-- Authorized scope and human review remain essential for agentic security workflows.
+The HTTP integration therefore keeps findings on hold under the current publication policy. Document-based answers have a separate provenance path. I test both the expected behavior and attempts to bypass the restrictions, including missing or inconsistent evidence.
 
-## Validation and maturity
+## Current status
 
-The work includes component tests, adversarial cases and interoperability experiments. Integration and local inference performance remain under active development. This showcase does not claim production readiness or independently certified forensic authenticity.
+The project has component tests and interoperability experiments, including NLI inference using ONNX Runtime. I'm still working on integration and local inference performance. I don't consider it production-ready, and the integrity checks are not forensic authentication.
 
-## Attribution
-
-CYBER-AI is the original evidence-oriented research and engineering project. SENTINEL-AI incorporates and adapts the open-source ARTEX project; ARTEX is not claimed as original DOTCOM software. The integration, evidence contracts and validation work are the focus of this case study. Upstream: [Autumn-27/ARTEX](https://github.com/Autumn-27/ARTEX), AGPL-3.0 (as identified in the private repository's upstream documentation).
-
-No operational targets, private datasets, source code or internal deployment configuration are included.
+SENTINEL-AI adapts [ARTEX](https://github.com/Autumn-27/ARTEX) (AGPL-3.0, as identified in the upstream documentation). My work here concerns CYBER-AI, the integration and the evidence-validation layer, not authorship of the original ARTEX platform. Security testing is intended for authorized environments.
