@@ -24,6 +24,14 @@ Retail POS, inventory and gym management software. I work on the application and
 
 DOTCOM OS is an architecture research project focused on mobile data protection. EmA is an early native Android prototype for processing financial notifications locally.
 
+## A few things I've tested
+
+- CYBER-AI: an earlier HTTP bridge integration run recorded 44 passing tests. [Integration notes](showcase/cyber-intelligence.md#current-status).
+- GYM OS: isolated PostgreSQL integration checks passed for tenant RLS, billing and QR access, alongside the frontend build and static checks. [Database notes](showcase/enterprise-saas.md#gym-os).
+- AutoPilot: scheduled pipeline, publishing and YouTube jobs completed successfully in GitHub Actions. [Workflow notes](showcase/autopilot.md).
+
+These results refer to specific development runs, not production certifications. The detailed notes explain what was tested and what remains open.
+
 ## Tools I work with
 
 - TypeScript, Next.js, React and Python.
