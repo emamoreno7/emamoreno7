@@ -1,34 +1,17 @@
-# Mobile Security & Privacy Engineering
+# Mobile security and privacy
 
-**DOTCOM OS / EmA** · Architecture research and early prototype
-
-[Back to engineering profile](../README.md)
+[Back to profile](../README.md)
 
 ## DOTCOM OS
 
-Research into mobile data protection in the context of loss, theft and unauthorized physical access.
+I'm researching ways to protect sensitive data on mobile devices in the event of loss, theft or unauthorized physical access. The design covers encrypted storage, key management, controlled access and managed-device security.
 
-Design areas include encrypted storage, controlled access to sensitive data, key lifecycle management and managed-device security. Platform capabilities and restrictions must be validated before making implementation or protection claims.
+This is an architecture project rather than a released application. Some of the proposed controls depend on what the operating system and device management APIs actually permit.
 
 ## EmA
 
-Native Android prototype exploring on-device financial notification processing and privacy-conscious user assistance.
+EmA is a native Android prototype written in Kotlin and Jetpack Compose. The idea is to help users understand everyday spending without sending the contents of their financial notifications to a server.
 
-```mermaid
-flowchart LR
-    A[User-authorized notification access] --> B[Application allowlist]
-    B --> C[Local processing]
-    C --> D[On-device user experience]
-```
+At the current prototype stage, the work focuses on permission handling, notification access and filtering by application. Parsing amounts, storing events and building the main product interface are still pending.
 
-Conceptual target architecture. The current early prototype validates notification access; complete parsing, persistence and product UI are not yet established.
-
-## Engineering focus
-
-- Kotlin and Jetpack Compose.
-- Explicit permissions and application allowlists.
-- Data minimization and on-device processing.
-- Separation of sensitive financial content from diagnostic or analytics data.
-- Physical-device testing and careful treatment of platform guarantees.
-
-This case study separates intended privacy properties from implemented and tested behavior. No private app data or source code is included.
+I want to keep financial notification content out of release logs and analytics. That is a design requirement, not a verified privacy guarantee for a finished application. Physical-device testing is part of the work.
