@@ -1,42 +1,26 @@
-# AutoPilot AI — Autonomous Marketing Orchestration
+# AutoPilot AI
 
-**AI-enabled SaaS** · Active development
+[Back to profile](../README.md)
 
-[Back to engineering profile](../README.md)
+I'm building AutoPilot to manage the work that normally sits between a brand's content ideas and its social media accounts: planning, writing, media generation, approval and publishing.
 
-## Problem
-
-Content teams must coordinate brand context, platform-specific content, approvals, media production and publishing across disconnected services. AutoPilot explores an integrated AI-assisted workflow with configurable autonomy.
+Rather than treating every prompt as a new conversation, the system uses stored brand context. Content can then move through drafts, review and scheduling without losing its history.
 
 ```mermaid
 flowchart LR
-    A[Brand context] --> B[Content planning]
-    B --> C[AI generation]
-    C --> D[Draft and review]
-    D --> E[Scheduled or approved publishing]
-    C --> F[Media production]
-    F --> D
-    E --> G[Analytics and decision history]
-    G --> B
+    A[Brand context] --> B[Content generation]
+    B --> C[Draft]
+    B --> D[Video production]
+    D --> C
+    C --> E[Approval or configured automation]
+    E --> F[Publishing]
+    F --> G[History and analytics]
 ```
 
-Conceptual workflow, not a claim that every integration is production-ready.
+The diagram shows the intended workflow.
 
-## Engineering focus
+There are three agent modes: off, suggestions and autopilot. The reason for keeping these separate is that generating a draft and posting to a live account are very different operations. I want the user to decide where the system is allowed to act.
 
-- Brand-specific context and platform-aware generation.
-- Agent decision modes: manual, suggestion and autonomous execution.
-- Explicit approval and content lifecycle management.
-- OAuth-based social account integration.
-- Multimedia production using scripted video and rendering workflows.
-- Audit history and centralized publication state.
+The application uses Next.js, TypeScript and Supabase. The repository includes Instagram and YouTube integration workflows, OAuth, and a video pipeline based on scripts and Remotion.
 
-## Stack
-
-Next.js, React, TypeScript, Supabase/PostgreSQL, AI model APIs, Remotion and social platform integrations.
-
-## Maturity
-
-The private repository documents content workflows, Instagram and YouTube integrations, video production and analytics. End-to-end publishing, broader platform coverage and production availability are not independently verified by this showcase.
-
-Source code, credentials, client data and private deployment details are intentionally excluded.
+The product is still in development. I haven't established production readiness or verified every publishing integration end to end for this public case study. The implementation remains private.
