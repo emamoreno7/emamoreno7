@@ -31,6 +31,10 @@ The HTTP integration therefore keeps findings on hold under the current publicat
 
 ## Current status
 
-The project has component tests and interoperability experiments, including NLI inference using ONNX Runtime. I'm still working on integration and local inference performance. I don't consider it production-ready, and the integrity checks are not forensic authentication.
+The earlier HTTP bridge integration run recorded 44 passing tests, including 17 HTTP-specific cases. These covered request/response integrity, identity binding, malformed input and the distinction between semantic support and provenance. The 17 cases are part of the 44, not an additional suite.
+
+The numbers come from the project's internal engineering record; they describe that revision, not a new run of the current branch. The bridge, provenance fixes and native import experiments are being developed separately rather than merged into the main release.
+
+For the NLI experiment, I'm using a pinned ONNX model on CPU with a 512-token limit. Model identity and runtime metrics are recorded alongside the analysis. I'm still evaluating inference performance and the behavior of the integrated system. I don't consider it production-ready.
 
 SENTINEL-AI adapts [ARTEX](https://github.com/Autumn-27/ARTEX) (AGPL-3.0, as identified in the upstream documentation). My work here concerns CYBER-AI, the integration and the evidence-validation layer, not authorship of the original ARTEX platform. Security testing is intended for authorized environments.
