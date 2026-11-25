@@ -23,4 +23,8 @@ There are three agent modes: off, suggestions and autopilot. The reason for keep
 
 The application uses Next.js, TypeScript and Supabase. The repository includes Instagram and YouTube integration workflows, OAuth, and a video pipeline based on scripts and Remotion.
 
-The product is still in development. I haven't established production readiness or verified every publishing integration end to end for this public case study. The implementation remains private.
+The test suite includes workspace isolation, agent decisions, worker dispatch and AI resilience. I also use scheduled GitHub Actions for the publishing and YouTube workflows.
+
+On November 25, 2026, the AutoPilot pipeline, publication job and YouTube AutoPilot job each completed successfully in GitHub Actions, including their configured result-check steps. This is evidence of successful scheduled executions, not confirmation that a particular post or video went live.
+
+The product remains in development. The source is private, and I still need a public, sanitized demonstration of the publishing flow.
