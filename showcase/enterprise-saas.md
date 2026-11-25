@@ -1,41 +1,23 @@
-# Enterprise SaaS & Transactional Security
+# Business applications and SaaS
 
-**Retail POS, business management and GYM OS** · Active development / pilot
+[Back to profile](../README.md)
 
-[Back to engineering profile](../README.md)
+A large part of my work involves retail and service businesses. Besides the screens people use every day, I work on the database rules that make operations reliable: who can change a price, record a payment, return a sale or access another location's data.
 
-## Problem
+## Retail systems
 
-Commercial systems need predictable transactional behavior, correct authorization, auditable operations and tenant isolation. UI-level checks alone are not sufficient for enforcing these requirements.
+My retail projects cover catalogs, inventory, sales, returns and cash management. In MegaShop, I've also worked on importing products from spreadsheets and photographs of supplier documents. AI helps with extraction and classification, but imported data needs review before it becomes part of the catalog.
 
-```mermaid
-flowchart TD
-    A[Web and mobile browser clients] --> B[Authenticated application layer]
-    B --> C[Role and tenant authorization]
-    C --> D[Validated transactional operations]
-    D --> E[(PostgreSQL)]
-    E --> F[Audit trail and reporting]
-```
-
-Shared architectural principles across multiple products; individual implementations differ.
-
-## Retail & commercial systems
-
-- Catalog, inventory, sales, returns and cash-management workflows.
-- Role-based operations and database-level security policies.
-- Transaction-oriented database functions and auditable business actions.
-- Public example: [Retail management repository](https://github.com/emamoreno7/Gestion-Inteligente-MegaShop).
+[View the public MegaShop repository](https://github.com/emamoreno7/Gestion-Inteligente-MegaShop).
 
 ## GYM OS
 
-- Multi-tenant gym and branch management, memberships and subscriptions.
-- Payment consistency and single-use QR access workflows.
-- Supervised exercise programming and role-based access.
-- Pilot stage; generative AI is a planned extension, not an implemented production feature.
-- Automated checks, with end-to-end multi-tenant testing required before production.
+This is a pilot for managing gyms, branches, memberships, payments and access. One of the problems I'm working on is preventing duplicate payments or repeated use of the same temporary QR code.
 
-## Engineering focus
+I use PostgreSQL transactions and database authorization rules for operations that cannot safely depend on a frontend check alone. The design includes tenant isolation, membership permissions and audit records.
 
-PostgreSQL transactions, Supabase Auth and row-level security, RBAC, idempotency, schema validation, auditability, migration discipline and automated build checks.
+The pilot has a rule-based exercise recommendation feature. Generative AI is planned, not implemented in the documented pilot. End-to-end tenant isolation and transaction testing are still needed before production.
 
-These are architecture case studies, not certifications or guarantees of deployed security.
+## Stack
+
+Next.js and React, TypeScript, Supabase Auth, PostgreSQL, RLS and versioned SQL migrations. The individual projects differ in their deployment and data models.
