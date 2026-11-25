@@ -16,7 +16,11 @@ This is a pilot for managing gyms, branches, memberships, payments and access. O
 
 I use PostgreSQL transactions and database authorization rules for operations that cannot safely depend on a frontend check alone. The design includes tenant isolation, membership permissions and audit records.
 
-The pilot has a rule-based exercise recommendation feature. Generative AI is planned, not implemented in the documented pilot. End-to-end tenant isolation and transaction testing are still needed before production.
+On November 17, 2026, three GitHub Actions workflows completed successfully against the same revision: the Next.js build and typecheck, static security and backend contract checks, and database integration.
+
+The database job started an isolated PostgreSQL instance, applied the migrations and passed its tenant RLS, billing and QR assertions. I use a disposable database for this so the checks do not touch customer data. These are integration checks in an isolated environment, not a production security audit.
+
+The pilot has a rule-based exercise recommendation feature. Generative AI is still planned. Deployment-specific and end-to-end acceptance testing remain necessary.
 
 ## Stack
 
