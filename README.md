@@ -1,63 +1,42 @@
 # Emanuel Moreno Di Cesare
 
-**Software Architect · AI Systems Engineer · Cybersecurity Researcher**
+Software Architect | AI Systems Engineer | Cybersecurity Researcher
 
-I design and build software systems at the intersection of artificial intelligence, cybersecurity and enterprise applications. My work focuses on turning complex requirements into secure, testable architectures — from autonomous agents and local inference to transactional SaaS platforms.
+I'm a software developer and architect based in Mendoza, Argentina. I work on business applications, AI systems and cybersecurity research through [DOTCOM](https://www.bydotcom.com).
 
-[DOTCOM — Software & Research](https://www.bydotcom.com) · Mendoza, Argentina
+Most of my current work is in private repositories, so I've put together a few public notes on the systems I'm building and the decisions behind them.
 
----
+## What I'm working on
 
-## Selected engineering work
+**[CYBER-AI / SENTINEL-AI](showcase/cyber-intelligence.md)**
 
-| Project | Engineering focus | Status |
-| :--- | :--- | :--- |
-| **CYBER-AI / SENTINEL-AI** | Evidence-driven cyber intelligence, hybrid retrieval, semantic validation, local LLM inference and secure interoperability | Active R&D |
-| **AutoPilot AI** | AI-powered marketing orchestration, brand context, approval workflows, social publishing and multimedia pipelines | Active development |
-| **Enterprise POS & SaaS** | Transactional workflows, role-based access, PostgreSQL security, auditing and commercial operations | Active development |
-| **GYM OS** | Multi-tenant membership management, payment consistency, QR access and supervised training workflows | Pilot development |
-| **DOTCOM OS** | Mobile security, cryptographic data protection and device-management architecture | Architecture & research |
-| **EmA** | Privacy-oriented native Android financial notification processing | Early prototype |
+A local cybersecurity assistant and its integration with an agent-based security testing platform. I'm working on hybrid search, semantic validation, evidence provenance and the conditions under which an AI-generated finding should be held for review. The integration builds on the open-source ARTEX project.
 
-Most active product repositories are private. Public case studies describe architecture, engineering decisions and project maturity without exposing proprietary implementation or customer data.
+**[AutoPilot AI](showcase/autopilot.md)**
 
-## Architecture case studies
+A marketing SaaS that uses AI to plan content, generate media and manage publishing workflows. The interesting part for me is controlling what an agent can do on its own and what needs approval.
 
-- [Cyber intelligence & evidence validation](showcase/cyber-intelligence.md)
-- [Autonomous marketing & AI orchestration](showcase/autopilot.md)
-- [Enterprise SaaS & transactional security](showcase/enterprise-saas.md)
-- [Mobile security & privacy engineering](showcase/mobile-security.md)
+**[Business applications and SaaS](showcase/enterprise-saas.md)**
 
-## Core engineering capabilities
+Retail POS, inventory and gym management software. I work on the application and database layers, including permissions, transactions, audit trails and tenant isolation.
 
-| Domain | Technologies & practices |
-| :--- | :--- |
-| **AI engineering** | Local LLMs, Ollama, RAG, hybrid search, RRF, NLI, ONNX Runtime, agent orchestration |
-| **Application architecture** | Next.js, React, TypeScript, Python, API design, event-driven workflows |
-| **Data & security** | PostgreSQL, Supabase, SQLite FTS5, ChromaDB, RLS, RBAC, cryptographic integrity, audit trails |
-| **Delivery & reliability** | Git, GitHub Actions, Vercel, automated testing, regression validation, controlled releases |
-| **Mobile engineering** | Kotlin, Jetpack Compose, privacy-by-design and mobile security architecture |
+**[Mobile security and privacy](showcase/mobile-security.md)**
 
-## Engineering principles
+DOTCOM OS is an architecture research project focused on mobile data protection. EmA is an early native Android prototype for processing financial notifications locally.
 
-- **Evidence before confidence:** distinguish verified facts, inferences and hypotheses.
-- **Security by design:** enforce authorization and data isolation at the appropriate trust boundary.
-- **Reliability through testing:** make claims reproducible through automated and adversarial validation.
-- **Responsible autonomy:** use explicit scope, approval gates and audit trails for agentic systems.
-- **Transparent maturity:** distinguish production-ready features from pilots, experiments and proposed designs.
+## Tools I work with
 
-## Public software
+- TypeScript, Next.js, React and Python.
+- PostgreSQL, Supabase, SQLite and ChromaDB.
+- Ollama, RAG, NLI, ONNX Runtime and AI model APIs.
+- Kotlin, Jetpack Compose, GitHub Actions and Vercel.
 
-- [DOTCOM — Software Solutions](https://github.com/emamoreno7/dotcom-software-solutions)
-- [Retail management system](https://github.com/emamoreno7/Gestion-Inteligente-MegaShop)
+I spend a fair amount of time on database design, debugging, testing and security reviews. In my AI research, I keep the model's output separate from the evidence used to verify it.
+
+## Public repositories
+
+- [DOTCOM website](https://github.com/emamoreno7/dotcom-software-solutions)
+- [MegaShop retail management](https://github.com/emamoreno7/Gestion-Inteligente-MegaShop)
 - [Aesthetic center management](https://github.com/emamoreno7/sistema-estetica)
 
-## Professional focus
-
-Software architecture · Applied AI · Secure SaaS · Cybersecurity R&D · Technical leadership through design and implementation.
-
-For engineering collaborations and professional opportunities: [bydotcom.com](https://www.bydotcom.com).
-
----
-
-*Evidence over assumptions. Engineering over hype.*
+For software engineering opportunities or collaborations, you can reach me through [bydotcom.com](https://www.bydotcom.com).
