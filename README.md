@@ -2,51 +2,39 @@
 
 Software Architect | AI Systems Engineer | Cybersecurity Researcher
 
-I'm a software developer and architect based in Mendoza, Argentina. I work on business applications, AI systems and cybersecurity research through [DOTCOM](https://www.bydotcom.com).
+I'm a software developer and architect based in Mendoza, Argentina. Through [DOTCOM](https://www.bydotcom.com), I build business applications, autonomous AI workflows and local cybersecurity tools. I work across the application, backend and database layers, with particular attention to authorization, reliability and testing.
 
-Most of my current work is in private repositories, so I've put together a few public notes on the systems I'm building and the decisions behind them.
+Most of my current projects are private. I've made their architecture notes, selected test results and actual product screenshots available here.
 
-[Project screenshots and development photos](portfolio-media/README.md)
+## Selected projects
 
-## What I'm working on
+| [CYBER-AI / SENTINEL-AI](showcase/cyber-intelligence.md) | [AutoPilot AI](showcase/autopilot.md) | [MegaShop](showcase/enterprise-saas.md#retail-systems) |
+| :---: | :---: | :---: |
+| [<img src="portfolio-media/cyber-ai/consistency-development.jpg" width="175" alt="CYBER-AI development and local inference">](portfolio-media/README.md#cyber-ai--sentinel-ai) | [<img src="portfolio-media/autopilot/agent-controls.jpg" width="175" alt="AutoPilot agent controls">](portfolio-media/README.md#autopilot-ai) | [<img src="portfolio-media/megashop/dashboard.jpg" width="175" alt="MegaShop retail dashboard">](portfolio-media/README.md#megashop--retail-management) |
 
-**[CYBER-AI / SENTINEL-AI](showcase/cyber-intelligence.md)**
+[More project screenshots and development photos](portfolio-media/README.md)
 
-A local cybersecurity assistant and its integration with an agent-based security testing platform. I'm working on hybrid search, semantic validation, evidence provenance and the conditions under which an AI-generated finding should be held for review. The integration builds on the open-source ARTEX project.
+**[CYBER-AI / SENTINEL-AI](showcase/cyber-intelligence.md)** — Local cybersecurity assistant with hybrid retrieval, NLI-based evidence validation and a provenance gate. I'm integrating it with an ARTEX-based security testing platform. An earlier HTTP bridge integration run recorded 44 passing tests, including 17 HTTP-specific cases.
 
-**[AutoPilot AI](showcase/autopilot.md)**
+**[AutoPilot AI](showcase/autopilot.md)** — Marketing SaaS with brand context, configurable agent autonomy, model fallback and publishing workflows. Its scheduled pipeline, publishing and YouTube jobs have completed successfully in GitHub Actions.
 
-A marketing SaaS that uses AI to plan content, generate media and manage publishing workflows. The agent has configurable posting limits, active days and scheduling windows, plus a choice of model providers and fallback order.
+**[MegaShop](showcase/enterprise-saas.md#retail-systems)** — Retail management, inventory and AI-assisted product intake from spreadsheets and document photos. The planned connection to AutoPilot would use market trends and available inventory to prepare product promotions. [Public repository](https://github.com/emamoreno7/Gestion-Inteligente-MegaShop).
 
-**[Business applications and SaaS](showcase/enterprise-saas.md)**
+**[GYM OS](showcase/enterprise-saas.md#gym-os)** — Multi-tenant gym management pilot, covering memberships, payments, QR access and supervised training programs. Isolated PostgreSQL integration checks passed for tenant RLS, billing and QR access.
 
-Retail POS, inventory and gym management software. I work on the application and database layers, including permissions, transactions, audit trails and tenant isolation.
+**[Mobile security and privacy](showcase/mobile-security.md)** — DOTCOM OS is an architecture research project focused on mobile data protection. EmA is an early native Android prototype for processing financial notifications locally.
 
-**[Mobile security and privacy](showcase/mobile-security.md)**
+The test results above refer to particular development runs. The project notes explain their scope and what still needs validation.
 
-DOTCOM OS is an architecture research project focused on mobile data protection. EmA is an early native Android prototype for processing financial notifications locally.
+## Technical focus
 
-## A few things I've tested
-
-- CYBER-AI: an earlier HTTP bridge integration run recorded 44 passing tests. [Integration notes](showcase/cyber-intelligence.md#current-status).
-- GYM OS: isolated PostgreSQL integration checks passed for tenant RLS, billing and QR access, alongside the frontend build and static checks. [Database notes](showcase/enterprise-saas.md#gym-os).
-- AutoPilot: scheduled pipeline, publishing and YouTube jobs completed successfully in GitHub Actions. [Workflow notes](showcase/autopilot.md).
-
-These results refer to specific development runs, not production certifications. The detailed notes explain what was tested and what remains open.
-
-## Tools I work with
-
-- TypeScript, Next.js, React and Python.
-- PostgreSQL, Supabase, SQLite and ChromaDB.
-- Ollama, RAG, NLI, ONNX Runtime and AI model APIs.
-- Kotlin, Jetpack Compose, GitHub Actions and Vercel.
-
-I spend a fair amount of time on database design, debugging, testing and security reviews. In my AI research, I keep the model's output separate from the evidence used to verify it.
+- **AI systems:** Python, local LLMs, Ollama, hybrid RAG, NLI, ONNX Runtime, model routing and agent orchestration.
+- **Full-stack and backend:** TypeScript, Next.js, React, API design, PostgreSQL, Supabase and SQLite.
+- **Security and reliability:** RLS, role-based access control, transactional workflows, evidence provenance and automated testing.
+- **Mobile and delivery:** Kotlin, Jetpack Compose, Vercel and GitHub Actions.
 
 ## Public repositories
 
-- [DOTCOM website](https://github.com/emamoreno7/dotcom-software-solutions)
-- [MegaShop retail management](https://github.com/emamoreno7/Gestion-Inteligente-MegaShop)
-- [Aesthetic center management](https://github.com/emamoreno7/sistema-estetica)
+[DOTCOM website](https://github.com/emamoreno7/dotcom-software-solutions) · [MegaShop retail management](https://github.com/emamoreno7/Gestion-Inteligente-MegaShop) · [Aesthetic center management](https://github.com/emamoreno7/sistema-estetica)
 
-For software engineering opportunities or collaborations, you can reach me through [bydotcom.com](https://www.bydotcom.com).
+For software architecture, applied AI, backend engineering opportunities or collaborations, you can reach me through [bydotcom.com](https://www.bydotcom.com).
