@@ -35,7 +35,7 @@ The test results above refer to particular development runs. The project notes e
 
 ## Public demo
 
-[Evidence Review Lab](https://github.com/emamoreno7/evidence-review-lab.) — a standalone example of evidence integrity, extractive claim checking and controlled automation, inspired by CYBER-AI and AutoPilot. Includes synthetic scenarios, a browser interface and 18 unit tests. No private source code or credentials are required.
+[Evidence Review Lab](https://github.com/emamoreno7/evidence-review-lab) — a standalone example of evidence integrity, extractive claim checking and controlled automation, inspired by CYBER-AI and AutoPilot. Includes synthetic scenarios, a browser interface and 18 unit tests. No private source code or credentials are required. [Try the web demo](https://emamoreno7.github.io/evidence-review-lab/).
 
 ## Code example
 
