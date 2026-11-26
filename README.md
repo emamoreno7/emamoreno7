@@ -33,6 +33,10 @@ The test results above refer to particular development runs. The project notes e
 - **Security and reliability:** RLS, role-based access control, transactional workflows, evidence provenance and automated testing.
 - **Mobile and delivery:** Kotlin, Jetpack Compose, Vercel and GitHub Actions.
 
+## Public demo
+
+[Evidence Review Lab](https://github.com/emamoreno7/evidence-review-lab.) — a standalone example of evidence integrity, extractive claim checking and controlled automation, inspired by CYBER-AI and AutoPilot. Includes synthetic scenarios, a browser interface and 18 unit tests. No private source code or credentials are required.
+
 ## Code example
 
 [Service profitability calculations and tests](examples/README.md) — a small TypeScript module from the aesthetic center application, with eight reproducible unit tests added during the portfolio review.
