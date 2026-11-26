@@ -33,6 +33,10 @@ The test results above refer to particular development runs. The project notes e
 - **Security and reliability:** RLS, role-based access control, transactional workflows, evidence provenance and automated testing.
 - **Mobile and delivery:** Kotlin, Jetpack Compose, Vercel and GitHub Actions.
 
+## Code example
+
+[Service profitability calculations and tests](examples/README.md) — a small TypeScript module from the aesthetic center application, with eight reproducible unit tests added during the portfolio review.
+
 ## Public repositories
 
 [DOTCOM website](https://github.com/emamoreno7/dotcom-software-solutions) · [MegaShop retail management](https://github.com/emamoreno7/Gestion-Inteligente-MegaShop) · [Aesthetic center management](https://github.com/emamoreno7/sistema-estetica)
