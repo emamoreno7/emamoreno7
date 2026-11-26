@@ -27,4 +27,8 @@ The test suite includes workspace isolation, agent decisions, worker dispatch an
 
 On November 25, 2026, the AutoPilot pipeline, publication job and YouTube AutoPilot job each completed successfully in GitHub Actions, including their configured result-check steps. This is evidence of successful scheduled executions, not confirmation that a particular post or video went live.
 
-The product remains in development. The source is private, and I still need a public, sanitized demonstration of the publishing flow.
+The mobile interface also lets me set daily posting limits, minimum intervals, active days and a local-time publishing window. There is a manual stop control and an option to run the agent without waiting for the scheduled job. The scheduling screen explains when there is not enough historical engagement data to optimize posting times. The provider settings expose the primary model, fallback order and image-generation provider; the billing screen displays usage against plan limits.
+
+The content library shows items and their publishing status. The interface is not independent proof that each post reached the external platform or that all provider failovers have been tested.
+
+The product remains in development and the source is private.
