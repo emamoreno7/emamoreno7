@@ -35,3 +35,19 @@ Most of this work happens in the terminal. These photos are a record of developm
 | :---: | :---: | :---: |
 | [<img src="cyber-ai/sentinel-startup.jpg" width="220" alt="ARTEX-based development backend startup with token masked">](cyber-ai/sentinel-startup.jpg) | [<img src="cyber-ai/consistency-development.jpg" width="220" alt="Consistency engine development and local inference logs">](cyber-ai/consistency-development.jpg) | [<img src="cyber-ai/intel-build.jpg" width="220" alt="Local inference build troubleshooting on an Intel Mac">](cyber-ai/intel-build.jpg) |
 | Local ARTEX-based backend and PostgreSQL configuration | Working on consistency validation alongside local inference logs | Compilation and troubleshooting on Intel hardware; build errors are visible |
+
+## MegaShop — Retail management
+
+[Architecture notes](../showcase/enterprise-saas.md#retail-systems) · [Application repository](https://github.com/emamoreno7/Gestion-Inteligente-MegaShop)
+
+| Dashboard | Product imports | Maintenance |
+| :---: | :---: | :---: |
+| [<img src="megashop/dashboard.jpg" width="220" alt="MegaShop branch dashboard">](megashop/dashboard.jpg) | [<img src="megashop/imports.jpg" width="220" alt="CSV, Excel and AI image import options">](megashop/imports.jpg) | [<img src="megashop/maintenance.jpg" width="220" alt="Administrative error logs and user activity menu">](megashop/maintenance.jpg) |
+| Branch overview | Spreadsheet and photo imports | Administrative diagnostics |
+
+| Catalog | Inventory |
+| :---: | :---: |
+| [<img src="megashop/catalog.jpg" width="220" alt="Empty catalog with search and filters">](megashop/catalog.jpg) | [<img src="megashop/stock.jpg" width="220" alt="Empty stock view and movements tab">](megashop/stock.jpg) |
+| Product search and filters | Current stock and movement views |
+
+These screenshots show an administrator view with an empty catalog and no recorded stock at capture time. They demonstrate the interface, not completed transactions or end-to-end validation. Browser address bars have been cropped.

@@ -14,7 +14,7 @@ I'm extending the inventory workflow to monitor potential duplicates and product
 
 The similarity check during imports is implemented; continuous inventory monitoring and the cross-product publishing flow still need independent validation.
 
-[View the public MegaShop repository](https://github.com/emamoreno7/Gestion-Inteligente-MegaShop).
+[View the public MegaShop repository](https://github.com/emamoreno7/Gestion-Inteligente-MegaShop). [Product screenshots](../portfolio-media/README.md#megashop--retail-management).
 
 ## GYM OS
 
