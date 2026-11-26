@@ -14,7 +14,7 @@ A local cybersecurity assistant and its integration with an agent-based security
 
 **[AutoPilot AI](showcase/autopilot.md)**
 
-A marketing SaaS that uses AI to plan content, generate media and manage publishing workflows. The interesting part for me is controlling what an agent can do on its own and what needs approval.
+A marketing SaaS that uses AI to plan content, generate media and manage publishing workflows. The agent has configurable posting limits, active days and scheduling windows, plus a choice of model providers and fallback order.
 
 **[Business applications and SaaS](showcase/enterprise-saas.md)**
 
