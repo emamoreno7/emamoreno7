@@ -51,3 +51,19 @@ Most of this work happens in the terminal. These photos are a record of developm
 | Product search and filters | Current stock and movement views |
 
 These screenshots show an administrator view with an empty catalog and no recorded stock at capture time. They demonstrate the interface, not completed transactions or end-to-end validation. Browser address bars have been cropped.
+
+## GYM OS — Gym management and training
+
+[Architecture and database testing notes](../showcase/enterprise-saas.md#gym-os)
+
+| Owner dashboard | Member directory | Staff management |
+| :---: | :---: | :---: |
+| [<img src="gym-os/dashboard.jpg" width="220" alt="Gym dashboard with role-specific data">](gym-os/dashboard.jpg) | [<img src="gym-os/members.jpg" width="220" alt="Member creation and search interface">](gym-os/members.jpg) | [<img src="gym-os/staff.jpg" width="220" alt="Verified staff account linking and instructor assignment">](gym-os/staff.jpg) |
+| Role-specific overview | Member search and pagination | Staff roles and instructor assignment |
+
+| Training Studio | Training program |
+| :---: | :---: |
+| [<img src="gym-os/training-studio.jpg" width="220" alt="Training Studio muscle group selection">](gym-os/training-studio.jpg) | [<img src="gym-os/training-program.jpg" width="220" alt="Training level selection and routine review">](gym-os/training-program.jpg) |
+| Four training focuses and three experience levels | Suggested routine for professional review |
+
+These are screenshots from the pilot. The account name has been masked. The member directory was empty at capture time. The training module offers rule-based programs that require professional review; it is not a generative AI feature. The screenshots do not establish production readiness or demonstrate live payment or QR transactions.

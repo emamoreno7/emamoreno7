@@ -18,6 +18,8 @@ The similarity check during imports is implemented; continuous inventory monitor
 
 ## GYM OS
 
+[Product screenshots](../portfolio-media/README.md#gym-os--gym-management-and-training)
+
 This is a pilot for managing gyms, branches, memberships, payments and access. One of the problems I'm working on is preventing duplicate payments or repeated use of the same temporary QR code.
 
 I use PostgreSQL transactions and database authorization rules for operations that cannot safely depend on a frontend check alone. The design includes tenant isolation, membership permissions and audit records.
