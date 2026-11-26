@@ -1,6 +1,6 @@
 # AutoPilot AI
 
-[Back to profile](../README.md)
+[Back to profile](../README.md) · [Product screenshots](../portfolio-media/README.md#autopilot-ai)
 
 I'm building AutoPilot to manage the work that normally sits between a brand's content ideas and its social media accounts: planning, writing, media generation, approval and publishing.
 

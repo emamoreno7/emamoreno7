@@ -1,6 +1,6 @@
 # CYBER-AI / SENTINEL-AI
 
-Work in progress. [Back to profile](../README.md).
+Work in progress. [Back to profile](../README.md) · [Development photos](../portfolio-media/README.md#cyber-ai--sentinel-ai).
 
 I started CYBER-AI because I wanted a local security assistant whose answers could be checked against actual technical documentation. Getting a plausible answer from a model is relatively easy. Checking whether the cited source actually supports that answer is a different problem.
 

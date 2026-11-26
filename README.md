@@ -6,6 +6,8 @@ I'm a software developer and architect based in Mendoza, Argentina. I work on bu
 
 Most of my current work is in private repositories, so I've put together a few public notes on the systems I'm building and the decisions behind them.
 
+[Project screenshots and development photos](portfolio-media/README.md)
+
 ## What I'm working on
 
 **[CYBER-AI / SENTINEL-AI](showcase/cyber-intelligence.md)**
