@@ -8,6 +8,12 @@ A large part of my work involves retail and service businesses. Besides the scre
 
 My retail projects cover catalogs, inventory, sales, returns and cash management. In MegaShop, I've also worked on importing products from spreadsheets and photographs of supplier documents. AI helps with extraction and classification, but imported data needs review before it becomes part of the catalog.
 
+The import pipeline normalizes prices and product information, combines AI classification with keyword rules and flags similar catalog entries for review. The system is designed around Supabase RLS, role-based permissions and branch-specific access. Stock movements and administrative logs are part of the operational interface.
+
+I'm extending the inventory workflow to monitor potential duplicates and products with no movement over a monthly period. A planned integration with AutoPilot would match relevant market trends against the shop's available stock and use connected social accounts to promote suitable products. I see this as a way to connect retail operations with autonomous marketing, while keeping inventory accuracy and publishing permissions under the merchant's control.
+
+The similarity check during imports is implemented; continuous inventory monitoring and the cross-product publishing flow still need independent validation.
+
 [View the public MegaShop repository](https://github.com/emamoreno7/Gestion-Inteligente-MegaShop).
 
 ## GYM OS
